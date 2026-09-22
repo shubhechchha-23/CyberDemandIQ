@@ -32,7 +32,7 @@
 
 ---
 
-## 🚀 Overview
+<img width="1672" height="941" alt="cyderdemandiq" src="https://github.com/user-attachments/assets/ccf083c8-4b9a-49b2-bb23-019f8ed5941c" />
 
 **CyberDemandIQ** is an end-to-end cybersecurity intelligence platform that combines **Machine Learning, network-flow analytics, PostgreSQL, FastAPI and Streamlit** to detect attacks, investigate network activity, assess security risk and visualize threat intelligence.
 
