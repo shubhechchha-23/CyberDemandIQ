@@ -32,11 +32,25 @@
 
 ---
 
-<img width="1672" height="941" alt="cyderdemandiq" src="https://github.com/user-attachments/assets/ccf083c8-4b9a-49b2-bb23-019f8ed5941c" />
-
 **CyberDemandIQ** is an end-to-end cybersecurity intelligence platform that combines **Machine Learning, network-flow analytics, PostgreSQL, FastAPI and Streamlit** to detect attacks, investigate network activity, assess security risk and visualize threat intelligence.
 
 The platform transforms large-scale network-flow data into an interactive security analytics workflow.
+
+---
+
+## 🚀 Dashboard Demo
+
+### 🖥️ Interactive Security Dashboard
+
+<img width="1672" height="941" alt="CyberDemandIQ Dashboard" src="https://github.com/user-attachments/assets/ccf083c8-4b9a-49b2-bb23-019f8ed5941c" />
+
+
+CyberDemandIQ provides an integrated Streamlit dashboard for exploring network activity, attack intelligence, AI detection results, security risk and predictive analytics.
+
+### 📸 Dashboard Preview
+
+> 🚧 **Cloud deployment is currently under development.**  
+> The complete application can be executed locally using the FastAPI backend, PostgreSQL database and Streamlit dashboard.
 
 ---
 
@@ -78,17 +92,17 @@ Risk Interpretation
 
 The model uses network-flow features including:
 
-* Packet length statistics
-* Average packet size
-* Forward / backward packet statistics
-* Flow duration
-* Packet and byte rates
-* Flow inter-arrival time
-* TCP flag activity
-* Active / idle statistics
-* Traffic asymmetry
-* Window-size features
-* Packet variability
+* 📦 Packet length statistics
+* 📊 Average packet size
+* ↔️ Forward / backward packet statistics
+* ⏱️ Flow duration
+* 📈 Packet and byte rates
+* 🔄 Flow inter-arrival time
+* 🚩 TCP flag activity
+* ⚡ Active / idle statistics
+* ↔️ Traffic asymmetry
+* 🪟 Window-size features
+* 📉 Packet variability
 
 ---
 
@@ -106,15 +120,10 @@ Objective        : binary:logistic
 Random State     : 42
 ```
 
-Model artifact:
+### 📦 Model Artifacts
 
 ```text
 models/cyberdemandiq_xgboost.json
-```
-
-Feature importance:
-
-```text
 models/feature_importance.csv
 ```
 
@@ -162,11 +171,11 @@ Table  : network_flows
 
 The database supports:
 
-* Network-flow storage
-* Attack statistics
-* Traffic investigation
-* Label distribution
-* Security analytics
+* 🗄️ Network-flow storage
+* 🚨 Attack statistics
+* 🔎 Traffic investigation
+* 📊 Label distribution
+* 📈 Security analytics
 
 ---
 
@@ -174,7 +183,7 @@ The database supports:
 
 Built with **FastAPI**.
 
-### Main endpoints
+### Main Endpoints
 
 ```text
 GET /
@@ -183,25 +192,27 @@ GET /api/attack-statistics
 GET /api/network-flows
 ```
 
+The API provides backend services for database statistics, attack analytics and network-flow investigation.
+
 ---
 
 ## 📊 Dashboard
 
 Built with **Streamlit + Plotly**.
 
-### Modules
+### Dashboard Modules
 
-```text
-📊 Overview
-🚨 Threat Intelligence
-🤖 AI Detection
-🔎 Network Investigation
-⚠️ Risk Analytics
-📈 Security Demand
-🧠 Response Intelligence
-🧪 Model Monitoring
-🗄️ Database Explorer
-```
+| Module                   | Function                                           |
+| ------------------------ | -------------------------------------------------- |
+| 📊 Overview              | Security operations summary and traffic statistics |
+| 🚨 Threat Intelligence   | Attack and threat distribution analysis            |
+| 🤖 AI Detection          | XGBoost-based attack detection                     |
+| 🔎 Network Investigation | Network-flow investigation                         |
+| ⚠️ Risk Analytics        | Security risk analysis                             |
+| 📈 Security Demand       | LSTM, GRU and XGBoost forecasting                  |
+| 🧠 Response Intelligence | Security-response analysis                         |
+| 🧪 ML Model Monitoring   | ML model and feature monitoring                    |
+| 🗄️ Database Explorer    | PostgreSQL-backed data exploration                 |
 
 ---
 
@@ -209,30 +220,33 @@ Built with **Streamlit + Plotly**.
 
 ### 💻 Programming & Data
 
-🐍 Python • 🗃️ SQL • 🐼 Pandas • 🔢 NumPy
+🐍 **Python** • 🗃️ **SQL** • 🐼 **Pandas** • 🔢 **NumPy**
 
 ### 🤖 AI / Machine Learning
 
-🤖 Machine Learning • 🌳 XGBoost • 📚 Scikit-learn • 🔥 PyTorch
-🧠 Deep Learning • 📈 LSTM • 🔄 GRU • 🔬 Feature Engineering
+🤖 **Machine Learning** • 🌳 **XGBoost** • 📚 **Scikit-learn** • 🔥 **PyTorch**
+
+🧠 **Deep Learning** • 📈 **LSTM** • 🔄 **GRU** • 🔬 **Feature Engineering**
 
 ### 🛡️ Cybersecurity
 
-🔐 Network Security • 🚨 Attack Detection • 🔎 Threat Intelligence
-⚠️ Risk Analytics • 📡 Network Traffic Analysis • 🧠 Security Intelligence
+🔐 **Network Security** • 🚨 **Attack Detection** • 🔎 **Threat Intelligence**
+
+⚠️ **Risk Analytics** • 📡 **Network Traffic Analysis** • 🧠 **Security Intelligence**
 
 ### 🗄️ Database & Backend
 
-🐘 PostgreSQL • ⚡ FastAPI • 🔗 REST APIs • 🐍 Psycopg2
+🐘 **PostgreSQL** • ⚡ **FastAPI** • 🔗 **REST APIs** • 🐍 **Psycopg2**
 
 ### 📊 Visualization
 
-📊 Streamlit • 📈 Plotly • 📉 Matplotlib • 📊 Data Visualization
+📊 **Streamlit** • 📈 **Plotly** • 📉 **Matplotlib** • 📊 **Data Visualization**
 
 ### 🧰 Development
 
-💻 VS Code • 🔀 Git • 🐙 GitHub • 🧪 Model Evaluation
-🔐 Environment Variables • 📦 Virtual Environments
+💻 **VS Code** • 🔀 **Git** • 🐙 **GitHub** • 🧪 **Model Evaluation**
+
+🔐 **Environment Variables** • 📦 **Virtual Environments**
 
 ---
 
@@ -242,12 +256,54 @@ Built with **Streamlit + Plotly**.
 CyberDemandIQ/
 │
 ├── api/
+│   └── main.py
+│
 ├── config/
+│   ├── __init__.py
+│   └── database.py
+│
 ├── dashboard/
+│   ├── dashboard.py
 │   └── modules/
+│       ├── ai_detection.py
+│       ├── database.py
+│       ├── demand.py
+│       ├── flows.py
+│       ├── model_monitoring.py
+│       ├── overview.py
+│       ├── response.py
+│       ├── risk.py
+│       └── threats.py
+│
 ├── models/
+│   ├── cyberdemandiq_xgboost.json
+│   └── feature_importance.csv
+│
 ├── reports/
+│   ├── gru_forecast.png
+│   ├── lstm_forecast.png
+│   └── xgboost_feature_importance.png
+│
 ├── src/
+│   ├── clean_data.py
+│   ├── compare_forecasting_models.py
+│   ├── create_security_timeseries.py
+│   ├── dataset_summary.py
+│   ├── db_connection.py
+│   ├── explain_xgboost.py
+│   ├── inspect_cleaned.py
+│   ├── inspect_data.py
+│   ├── load_to_postgres.py
+│   ├── prepare_ml_data.py
+│   ├── prepare_sequences.py
+│   ├── response_intelligence.py
+│   ├── risk_scoring.py
+│   ├── test_database.py
+│   ├── train_gru.py
+│   ├── train_lstm.py
+│   ├── train_xgboost.py
+│   └── validate_source_aware.py
+│
 ├── .env.example
 ├── .gitignore
 ├── requirements.txt
@@ -258,20 +314,20 @@ CyberDemandIQ/
 
 ## ⚙️ Run Locally
 
-### 1️⃣ Clone
+### 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/shubhechchha-23/CyberDemandIQ.git
 cd CyberDemandIQ
 ```
 
-### 2️⃣ Create environment
+### 2️⃣ Create Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 3️⃣ Activate
+### 3️⃣ Activate Environment
 
 **Windows:**
 
@@ -279,31 +335,62 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 4️⃣ Install dependencies
+### 4️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5️⃣ Configure environment
+### 5️⃣ Configure Environment
 
 Create `.env` from `.env.example` and add your **local PostgreSQL credentials**.
 
-> 🔐 Never commit `.env` or real database credentials to GitHub.
+> 🔐 **Never commit `.env` or real database credentials to GitHub.**
 
-### 6️⃣ Start API
+### 6️⃣ Start FastAPI Backend
 
 ```bash
 uvicorn api.main:app --reload --port 8000
 ```
 
-### 7️⃣ Start Dashboard
+API documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+### 7️⃣ Start Streamlit Dashboard
 
 Open another terminal:
 
 ```bash
 streamlit run dashboard/dashboard.py
 ```
+
+The dashboard will normally be available at:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## 📈 Model & Forecasting Reports
+
+The repository includes generated analytical reports and visualizations:
+
+```text
+reports/
+├── gru_forecast.png
+├── lstm_forecast.png
+└── xgboost_feature_importance.png
+```
+
+These provide visual analysis of:
+
+* 📈 GRU forecasting
+* 📈 LSTM forecasting
+* 🌳 XGBoost feature importance
 
 ---
 
@@ -338,6 +425,8 @@ into a unified cybersecurity intelligence platform.
 * 📊 Advanced ML monitoring
 * 🔐 Authentication & RBAC
 
+> 🚧 **Cloud deployment is currently under development.** The complete application can be executed locally using the FastAPI backend, PostgreSQL database and Streamlit dashboard.
+
 ---
 
 ## 👩‍💻 Author
@@ -348,7 +437,7 @@ into a unified cybersecurity intelligence platform.
 
 Interested in:
 
-🤖 AI/ML • 📊 Data Science • 🛡️ Cybersecurity • 🧠 Decision Science • ⚡ Backend Development
+🤖 **AI/ML** • 📊 **Data Science** • 🛡️ **Cybersecurity** • 🧠 **Decision Science** • ⚡ **Backend Development**
 
 ---
 
